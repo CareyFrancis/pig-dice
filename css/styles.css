@@ -1,8 +1,11 @@
+body{
+  background-color: blue;
+  background-image: url(../images/image.jpeg)
+}
 .container{
-  font-family: system-ui;;
+  font-family: system-ui;
 }
 h1{
   text-align: center;
   text-decoration: underline;
-  font-family: "Gill Sans", sans-serif;
 }
