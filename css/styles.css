@@ -3,7 +3,8 @@ body{
   background-image: url(../images/image.jpeg)
 }
 .container{
-  font-family: system-ui;
+  background-color: #441D25;
+  font-family: system-ui
 }
 h1{
   text-align: center;
@@ -14,4 +15,14 @@ h3{
 }
 .p1{
   font-size: 15px;
+}
+.col-md-6{
+  background-color: #429F6C;
+}
+#col1{
+  float: left;
+}
+#col2{
+  float: right;
+  position: inherit;
 }

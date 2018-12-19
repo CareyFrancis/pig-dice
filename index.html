@@ -1,61 +1,60 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-    <script src="js/JQuery-3.3.1.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>PIG DICE!</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="jumbotron">
-          <h1>PIG DICE</h1>
-          <h3><strong>Welcome to Pig Dice! Dare to try test your luck at the game and find out if you are worthy.</strong></h3>
-      </div>
-      <div class="jumbotron">
-        <h3>Instructions on How To Play.</h3>
-          <p class="p1">Each turn, a player repeatedly rolls a die until either a 6 is rolled or the player decides to hold:</p>
-            <ul>
-              <li>If the player rolls a 6, they score nothing and it becomes the next player's turn.</li>
-              <li>If the player rolls any other number, it is added to their turn total and the player's turn continues.</li>
-              <li>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</li>
-            </ul>
-          <p class="p1">  The first player to score 100 or more points wins.</p>
-      </div>
-      <div class="row">
-    <div class="col-md-6">
-      <div class="well">
-        <div class="rollA">
-          <div class="panel panel-default">
-            PLAYER ONE
-          </div>
-          <div class="panel">
-          </div>
-          <div class="player-current-box">
-            <input type="number" name="userScore" value="" id="currentCount">
-            Current Count
-            <p> </p> <br>
-            <input type="number" name="compTotal" value="">
-            Total Count
-            <input class="btn-1 btn-default btn-lg active" type="button" value="ROLL" id="btn-roll">
+
+<head>
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+  <script src="js/JQuery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>PIG DICE!</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>PIG DICE</h1>
+      <h3><strong>Welcome to Pig Dice! Dare to try test your luck at the game and find out if you are worthy.</strong></h3>
+    </div>
+    <div class="jumbotron">
+      <h3>Instructions on How To Play.</h3>
+      <p class="p1">Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to hold:</p>
+      <ul>
+        <li>If the player rolls a 1, they score nothing and it becomes the next player's turn.</li>
+        <li>If the player rolls any other number, it is added to their turn total and the player's turn continues.</li>
+        <li>If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.</li>
+      </ul>
+      <p class="p1"> The first player to score 100 or more points wins.</p>
+    </div>
+    <div class="row">
+      <div class="col-md-6" id="col1">
+        <div class="well">
+          <div class="rollA">
+            <div class="panel panel-default">PLAYER ONE</div>
+            <div class="panel">
+            </div>
+            <div class="player-current-box">
+              <input type="number" name="userScore" value="" id="currentCount">
+              Current Count
+              <br>
+              <input type="number" name="compTotal" value="">
+              Total Count
+              <input class="btn-1 btn-default btn-lg active" type="button" value="ROLL" id="btn-roll">
+            </div>
           </div>
         </div>
       </div>
     </div>
-    </div>
-    <div class="col-md-6">
+
+    <div class="col-md-6" id="col2">
       <div class="well">
         <div class="rollB">
-          <div class="panel panel-default">
-            PLAYER TWO
-          </div>
+          <div class="panel panel-default">PLAYER TWO</div>
           <div class="panel">
           </div>
           <div class="player-current-label">
             <input type="number" name="compScore" value="" id="computerCount">
             Current Count
-            <p> </p> <br>
+            <br>
             <input type="number" name="compTotal" value="">
             Total Count
             <input class="btn-2 btn-default btn-lg active" type="button" value="ROLL" id="btn-roll">
@@ -63,7 +62,9 @@
         </div>
       </div>
     </div>
+    <input type="button" name="hold1" value="HOLD">
   </div>
 
-  </body>
+</body>
+
 </html>
