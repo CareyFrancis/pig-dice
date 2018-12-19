@@ -16,7 +16,7 @@ h3{
 .p1{
   font-size: 15px;
 }
-.col-md-6{
+{
   background-color: #429F6C;
 }
 #col1{
@@ -24,5 +24,8 @@ h3{
 }
 #col2{
   float: right;
-  position: inherit;
+}
+.hold1{
+  float: left;
+  font-size: 100px;
 }
